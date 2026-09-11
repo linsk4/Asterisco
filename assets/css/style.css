@@ -287,8 +287,9 @@ li { margin-bottom: .45em; }
 
 .nav__cta { padding: 12px 24px; font-size: .9rem; }
 
-/* The in-menu CTA exists only for the mobile drawer; the header keeps its own. */
-.nav__cta-mobile { display: none; }
+/* Shown only inside the mobile drawer. On desktop the contact page is reached
+   through the header's own coral CTA, so this link would just duplicate it. */
+.nav__mobile-only { display: none; }
 
 .nav-toggle {
   display: none;
@@ -766,9 +767,8 @@ li { margin-bottom: .45em; }
     border-bottom: 1px solid rgba(27,20,48,.09);
   }
   .nav__link:hover, .nav__link[aria-current="page"] { border-bottom-color: rgba(27,20,48,.09); }
-  .nav__cta { display: none; }             /* the CTA moves inside the open menu */
-  .nav__list .nav__cta-mobile { display: block; margin-top: 18px; }
-  .nav__list .nav__cta-mobile .btn { width: 100%; justify-content: center; }
+  .nav__cta { display: none; }             /* replaced by the in-drawer link below */
+  .nav__list .nav__mobile-only { display: block; }
   .nav-toggle { display: flex; }
   .site-header__inner { position: relative; }
 }
