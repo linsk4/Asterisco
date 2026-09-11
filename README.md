@@ -36,7 +36,10 @@ are easy to find:
 
 - **Founder portraits** — `about.html`, three empty slots. Each has a comment
   showing exactly what to replace.
-- **Testimonial quotes** — `lead-an-event.html`, two placeholder cards.
+- **Event reviews** — `events.html`, three placeholder cards under the past
+  events, with a copy-paste template for adding more.
+- **Testimonial quotes** — `lead-an-event.html`, two placeholder cards, from
+  women who *led* an event rather than attended one.
 - **Two blog posts** — `stories.html`, titles and images set, marked "coming soon".
 - **LinkedIn URL** — currently points at `contact.html` in every footer. Search
   for `LinkedIn` and swap the `href` once the profile exists.
