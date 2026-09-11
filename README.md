@@ -46,6 +46,9 @@ are easy to find:
 - **Email** — `Lina.skjelstad@gmail.com` throughout; swap for the real address
   once it's live.
 
+If the WhatsApp invite link ever changes, it appears 12 times across the 8
+pages — search for `chat.whatsapp.com` and replace all.
+
 ## Building it in Elementor
 
 - **Layout is flexbox only** — no CSS grid, no JS-driven layout. `.section` maps
