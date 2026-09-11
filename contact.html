@@ -114,31 +114,14 @@
 
             <div class="form__field">
               <label class="form__label" for="c-city">Where are you?</label>
-              <select id="c-city" name="city">
-                <option>Porto</option>
-                <option>Turin</option>
-                <option>Trondheim</option>
-                <option>Cagliari</option>
-                <option>Somewhere else — bring Asterisco* here</option>
-              </select>
+              <input type="text" id="c-city" name="city" placeholder="Your city — wherever that is">
+              <span class="form__hint">Not one of our cities yet? Tell us anyway. New local communities usually start because one woman got in touch.</span>
             </div>
 
             <div class="form__field">
-              <span class="form__label">What are you curious about?</span>
-              <div class="form__checks">
-                <label class="form__check"><input type="checkbox" name="interest" value="Climbing"> Climbing</label>
-                <label class="form__check"><input type="checkbox" name="interest" value="Cycling"> Cycling</label>
-                <label class="form__check"><input type="checkbox" name="interest" value="Running"> Running</label>
-                <label class="form__check"><input type="checkbox" name="interest" value="Padel"> Padel</label>
-                <label class="form__check"><input type="checkbox" name="interest" value="Hiking"> Hiking</label>
-                <label class="form__check"><input type="checkbox" name="interest" value="Skiing"> Skiing</label>
-                <label class="form__check"><input type="checkbox" name="interest" value="Anything new"> Honestly, anything new</label>
-              </div>
-            </div>
-
-            <div class="form__field">
-              <label class="form__label" for="c-message">Anything you'd like to tell us? <span class="muted">(optional)</span></label>
-              <textarea id="c-message" name="message" placeholder="New to the city? Never done any of this before? Say so — it helps us look after you on the day."></textarea>
+              <label class="form__label" for="c-message">Introduce yourself</label>
+              <textarea id="c-message" name="message" placeholder="New to the city? Want to try something new? Tell us a bit about yourself and what you're looking for."></textarea>
+              <span class="form__hint">A real person reads every message, and we'll get back to you.</span>
             </div>
 
             <div class="btn-row">

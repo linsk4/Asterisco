@@ -627,6 +627,9 @@ li { margin-bottom: .45em; }
   box-shadow: 0 0 0 3px rgba(70,40,124,.14);
 }
 
+/* Pill checkboxes. No page uses these right now — both forms ask open questions
+   instead — but they are kept so a checkbox group can be added back without
+   rebuilding the style. Safe to delete if you never want one. */
 .form__checks { display: flex; flex-wrap: wrap; gap: 12px; }
 .form__check {
   display: inline-flex; align-items: center; gap: 9px;
