@@ -96,8 +96,8 @@ photos/              original unoptimized photos (not used by the site)
 Shantell Sans, Marcellus and Space Grotesk are all SIL Open Font License, which
 permits self-hosting. They are served from `assets/fonts/` rather than the Google
 Fonts CDN so that the site works offline, loads faster, and sends no visitor IP
-addresses to a third party — the last of which matters for an EU-registered
-organization under GDPR.
+addresses to a third party — the last of which matters for a Norwegian NGO,
+since GDPR applies across the EEA.
 
 ### Images
 

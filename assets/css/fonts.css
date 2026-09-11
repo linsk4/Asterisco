@@ -6,8 +6,8 @@
 
    Self-hosted rather than loaded from the Google Fonts CDN so that:
      - the site works offline and when opened straight from disk,
-     - no visitor IP addresses are sent to a third party (a GDPR concern
-       for an EU-registered organization),
+     - no visitor IP addresses are sent to a third party (a GDPR concern;
+       GDPR applies in Norway through the EEA agreement),
      - there is no extra DNS + TLS round trip before text can paint.
 
    Latin and Latin-Extended subsets only — enough for English plus the
