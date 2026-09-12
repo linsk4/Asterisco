@@ -187,7 +187,10 @@ li { margin-bottom: .45em; }
 .col-5  { flex: 0 1 calc(41.666% - var(--gap) * 5 / 12); min-width: 280px; }
 .col-7  { flex: 0 1 calc(58.333% - var(--gap) * 7 / 12); min-width: 300px; }
 
-.stack > * + * { margin-top: 12px; }
+/* Blocks in a stack carry their own bottom margins (eyebrow 10px, heading
+   .5em, paragraph 1.15em), so the stack adds nothing on top — the same model
+   the Elementor build uses, where the paragraph margin is the only gap. */
+.stack > * + * { margin-top: 0; }
 .center { text-align: center; }
 .center .lead, .center p { margin-inline: auto; }
 .center .lead { max-width: 62ch; }
