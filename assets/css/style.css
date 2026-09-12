@@ -428,12 +428,22 @@ li { margin-bottom: .45em; }
 
 .iconbox__icon {
   display: inline-flex; align-items: center; justify-content: center;
-  width: 62px; height: 62px; margin-bottom: 22px;
+  width: 60px; height: 60px; margin-bottom: 22px;
   border-radius: 50%;
   background: var(--lilac);
   color: var(--violet);
-  font-family: var(--display); font-size: 1.7rem; font-weight: 700;
   flex-shrink: 0;
+}
+
+/* The brand asterisk, masked so it takes the colour of the circle it sits in.
+   Same artwork as the logo mark, so the symbol reads as ours rather than a
+   generic typographic asterisk. */
+.iconbox__icon::before {
+  content: "";
+  width: 30px; height: 30px;
+  background-color: currentColor;
+  -webkit-mask: url(../img/asterisk-mark.svg) center / contain no-repeat;
+  mask: url(../img/asterisk-mark.svg) center / contain no-repeat;
 }
 .iconbox__icon--coral { background: rgba(255,138,112,.24); color: #B4432A; }
 .iconbox__icon--sky   { background: rgba(168,216,232,.38); color: #1C5E73; }
