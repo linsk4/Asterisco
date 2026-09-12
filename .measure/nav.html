@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<style>
+  body{margin:0}
+  span.item{font-family:"Space Grotesk",sans-serif;font-weight:500;text-transform:lowercase;white-space:nowrap;display:inline-block}
+  .s15{font-size:15px}.s14{font-size:14px}
+  span.cta{font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;display:inline-block}
+</style>
+<div id="box"></div>
+<script>
+const items=["home","about","events","lead an event","partner & support","stories","join & contact"];
+const box=document.getElementById('box');
+window.RES={};
+function measure(cls){
+  const out={};
+  for(const t of items){
+    const s=document.createElement('span'); s.className='item '+cls; s.textContent=t; box.appendChild(s);
+    out[t]=s.getBoundingClientRect().width; 
+  }
+  return out;
+}
+window.run=async()=>{
+  await document.fonts.ready.then(()=>true);
+  const c=document.createElement('span'); c.className='cta'; c.textContent='come with us'; box.appendChild(c);
+  return {s15:measure('s15'), s14:measure('s14'), cta:c.getBoundingClientRect().width};
+};
+</script>
