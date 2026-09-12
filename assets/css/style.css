@@ -339,7 +339,7 @@ li { margin-bottom: .45em; }
   color: #fff;
 }
 .hero__inner h1 { color: #fff; max-width: 15ch; margin-bottom: 24px; }
-.hero__text { max-width: 56ch; color: var(--white-75); font-size: clamp(1.08rem, 1.6vw, 1.28rem); }
+.hero__text { max-width: 56ch; color: #fff; font-size: clamp(1.08rem, 1.6vw, 1.28rem); }
 .hero__btns { margin-top: 38px; }
 
 /* Compact hero for inner pages */
